@@ -570,6 +570,14 @@ nav .fa {
   border-top: solid;
 }
 
+@media screen and (max-width:700px){
+  .naslovgalerije1 h1{
+    font-size: 30px;
+    
+  }
+
+}
+
 
 
 .linija1 {
