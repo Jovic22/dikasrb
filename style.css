@@ -1,0 +1,863 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: black;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 100px 0 30px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  font-size: 14px;
+  line-height: 20px;
+ 
+}
+
+
+.galerijap1 {
+  position: absolute;
+  z-index: -5;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/GalerijaPozadina.png);
+  background-position: center;
+  
+}
+
+.onamap1 {
+  position: absolute;
+  z-index: -5;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/Onamapozadina.png);
+  background-position: center;
+  
+}
+
+
+
+.red {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.red h3{
+  font-family: 'Poppins';
+}
+
+.red p{
+  font-family: 'Poppins';
+}
+
+.red h4{
+  font-family: 'Poppins';
+}
+
+.kolona ul li a{
+  font-family: 'Poppins';
+}
+
+.socijalneikon a{
+  line-height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 25px 0px;
+  margin: 10px;
+  
+}
+
+.socijalneikon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+ 
+.ikoninsta{
+  background-image: url(images/ikoninsta.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikonfacebook{
+  background-image: url(images/ikonfacebook.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikontel{
+  background-image: url(images/ikontel.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikonlokacija{
+  background-image: url(images/ikonlokacija.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.kolona{
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.kolona1{
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.kolona1 h3{
+  margin: 0px auto 0px;
+}
+
+.to-top {
+  width: 50px;
+  height: 50px;
+  display: absolute;
+  cursor: pointer;
+  margin-left: 90%;
+  margin-top: 80vh;
+  position: fixed;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.to-top.active {
+  opacity: 1;
+}
+
+.to-top img{
+  width: 50px;
+  height: 50px;
+  display: absolute;
+}
+
+
+
+
+.logofuter {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.kolona h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.kolona1 h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.emailfuter {
+  width: fit-content;
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+}
+
+.kolona  ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.kolona  ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.header {
+  min-height: 100vh;
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.videopozadina {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .videopozadina {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .videopozadina {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+}
+
+
+
+
+
+nav{
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0);
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+.nav-links ul li a:hover{
+  color:   #f0c433;
+  
+}
+
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background:  #f0c433;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-kutija{
+  display: block;
+  width: 100%;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-kutija p{
+  font-family: 'Poppins';
+}
+
+.text-kutija a{
+  font-family: 'Poppins';
+}
+
+
+
+.text-kutija h1 {
+  font-size: 70px;
+  text-shadow: 0 0 9px black;
+
+}
+.text-kutija p {
+  margin: 10px 0 40px;
+  font-size: 18px;
+  color: whitesmoke;
+  text-shadow: 0 0 5px black;
+  margin-left: 32%;
+  margin-right: 32%;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.p111 {
+  font-size: 30px;
+  font-family: 'Poppins';
+  text-shadow: 0 0 5px black;
+  
+}
+
+.linijaispod1{
+  margin: auto;
+  width: 671px;
+  border-bottom: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+
+.pocetni-btn{
+  width: 150px;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-bottom-style: solid;
+  
+  
+}
+
+.pocetni-btn:hover{
+  background: #f0c433;
+  transition: 1s;
+  scale: 1.1;
+  color: black;
+  border-bottom-width: 2px;
+  border-color: black;
+  border-bottom-style: solid;
+}
+
+
+
+.butonigalerija{
+  width: 100%;
+}
+
+.butonigalerija a{
+  font-family: 'Poppins';
+}
+
+.podgrupakamena {
+  display: block;
+  width: 90%;
+  text-align: center;
+  color: #f0c433;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.podgrupakamena p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  border-bottom: double;
+  border-width: 2px;
+}
+
+nav .fa {
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 760px){
+  nav {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  }
+  footer{
+    bottom: unset;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 30px;
+  }
+
+  footer h3 {
+    margin: 0px auto 0px;
+    font-size: 22px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  .kolona ul li a {
+    font-size: 15px;
+
+  }
+
+  .socijalneikon a {
+    padding: 25px 15px;
+  }
+
+  .emailfuter {
+    margin: 5px auto 5px;
+  }
+
+  
+  .kolona{
+    flex-basis: 100%;
+  }
+
+  .kolona1{
+    flex-basis: 100%;
+  }
+
+
+  
+  .text-kutija h1{
+    font-size: 34px;
+  }
+
+  .text-kutija p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 15px;
+    
+  }
+
+  .p111 {
+    font-size: 22px;
+  }
+  
+  .naslovgalerije1 h1 {
+    font-size: 20px;
+  }
+
+  .podgrupakamena p{
+    font-size: 23px;
+  }
+
+  
+
+  nav img {
+    margin-top: 15px;
+  }
+  
+  .hamburger{
+    display: block;
+    z-index: 6;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 5;
+  }
+
+  .ulinkovi{
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+  }
+
+  .nav-links ul li a{
+    font-size: 22px;
+  }
+
+  .nav-links.active{
+    left: 0;
+  }
+  
+  .nav-links ul li {
+    padding: 35px 0;
+    top: 50px;
+  }
+
+  .nav-links ul li a:hover{
+    color: rgb(255, 196, 0);
+    transition: 0.5s;
+  
+  }
+
+  .nav-links ul li:hover::after{
+    width: 0%;
+  }
+
+  .to-top {
+    margin-left: 80%;
+  }
+
+}
+
+
+
+.naslovgalerije1{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.naslovgalerije1 h1{
+  color: #f0c433;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: solid;
+}
+
+
+
+.linija1 {
+  display: block;
+  height: 2px;
+  background-image: linear-gradient(to right, #E1AB39, #E9C156);
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+ .img-galerija {
+  width: 90%;
+  margin: 0px auto 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  
+}
+@media screen and (max-width:700px){
+  .img-galerija {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .linijaispod1{
+    width: 323px;
+  }
+
+
+  
+}
+.img-galerija img{
+  max-width: 100%;
+}
+
+.deodva p{
+  color: white;
+  font-family: 'Poppins';
+  margin: 50px auto;
+  width: 70%;
+  font-size: 20px;
+
+}
+
+.deodva {
+  display: block;
+  position: static;
+  text-align: center;
+  width: 100%;
+}
+
+.cast{
+  height: 60vh;
+  width: 100%;
+  background-image: url(images/Manastiri.png);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cast p{
+  position: static;
+  color: white;
+  font-family: 'Poppins';
+  width: 70%;
+  font-size: 20px;
+  margin: auto;
+  padding-top: 200px;
+  text-shadow: 0 0 5px black;
+
+}
+
+@media screen and (max-width:700px){
+  .cast p {
+    font-size: 14px;
+    padding-top: 120px;
+  }
+
+  .cast {
+    background-size: contain;
+    height: 40vh;
+  }
+
+  .deodva p{
+    font-size: 14px;
+  }
+
+}
+.img-galerija img:hover{
+  transform: scale(1.2);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.full-img img{
+  width: 90%;
+  max-width: 700px;
+}
+
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 50px;
+  font-family: 'Poppins';
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+
+
+
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin: 20px auto;
+}
+.copyright {
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.ispodlinija {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.ispodlinija span {
+  width: 15px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+.ispodlinija1 {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.ispodlinija1 span {
+  width: 15px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.ankoronama1 {
+  display: block;
+  position: absolute;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.ankoronama1 img{
+  width: 30%;
+  border-radius: 50px;
+  margin: 500px 35%;
+}
+
+
+
+
+.ankoronama1 img:hover{
+  scale: 1.2;
+  transition: 1s;
+  cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+  .ankoronama1 img{
+    width: 60%;
+    border-radius: 50px;
+    margin: 400px 20%;
+  }
+}
+
+
+/*--------kontakt----------*/
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  
+}
+form h3{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #e0e0e0;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button{
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button:hover{
+  color: rgb(0, 0, 0);
+  background: palegoldenrod;
+  transition: 1s;
+}
+
+/*------kraj kontakta---------*/
+
+

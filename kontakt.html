@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>Prirodni kamen dika</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+    
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        
+        <ul class="ulinkovi">
+          <li><a href="index.html" class="nav-link">NASLOVNA</a></li>
+          <li><a href="galerija.html" class="nav-link">GALERIJA</a></li>
+          <li><a href="katalog.html" class="nav-link">KATALOG</a></li>
+          <li><a href="onama.html" class="nav-link">O NAMA</a></li>
+          <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+      
+    </nav>
+
+<div class="container">
+  <form onsubmit="sendEmail(); reset(); return false;">
+    <h3>Kontakt Podatci Popuniti</h3>
+    <input type="text" id="name" placeholder="Ime" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phone" placeholder="Telefon" required>
+    <textarea id="message" rows="4" placeholder="Vaša Poruka""></textarea>
+    <button type="sumbit">Poslati</button>
+  </form> 
+  
+</div>
+
+
+</section>
+
+<footer>
+  <div class="red">
+    <div class="kolona">
+      <img src="images/logo.png" class="logofuter">
+      <p>I tako, da bi i vi bili dika svojim naslednicima, družite se sa kamenorezačkom radnjom “Dika“ i zajedno će mo stići u večnost.</p>
+    </div>
+
+    <div class="kolona">
+      <h3>Kamen DIKA <div class="ispodlinija"><span></span></div></h3>
+      <p>Novi Sad 021</p>
+      <p>Bulevar Cara Lazara 5</p>
+      <p>Novi Sad, PIB 12312540</p>
+      <p class="emailfuter">kamendika@gmail.com</p>
+      <h4>063 133 28 75</h4>
+    </div>
+    <div class="kolona">
+      <h3>Navigacija <div class="ispodlinija"><span></span></div></h3>
+      <ul>
+        <li><a href="index.html">Naslovna</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="onama.html">O Nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div  class="kolona1" >
+      <h3>Prirodni Kamen<div class="ispodlinija1"><span></span></div></h3>
+      <div class="socijalneikon">
+        <a target="_blank" href="https://www.instagram.com/" class="ikoninsta" ></a>
+        <a target="_blank" href="https://www.facebook.com/Kamen.Dika.Prirodni.Kamen" class="ikonfacebook"></a>
+        <a href="tel:+381694723442" class="ikontel"></a>
+        <a target="_blank" href="https://www.google.com/maps/place/44%C2%B013'36.1%22N+20%C2%B007'09.0%22E/@44.2266861,20.1191661,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6268d4984dacc5d!8m2!3d44.2266861!4d20.1191661" class="ikonlokacija"></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright"> Prirodni Kamen DIKA &#169 Sva Prava Zadržana</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</body>
+</html>
